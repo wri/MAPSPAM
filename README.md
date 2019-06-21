@@ -13,16 +13,25 @@ production|a
 yield|a
 value-of-production|b
 
-parameter structure a (and options)  
+parameter structure **a** (and options)  
 
 | parameter        | options                                                                              |
 |------------------|--------------------------------------------------------------------------------------|
 | spam_version     | spam2010v1r0                                                                         |
 | extent           | global                                                                               |
-| variable         | see                                                                                  |
+| variable         | see above                                                                            |
 | mapspam_cropname | [link](https://github.com/wri/MAPSPAM/blob/master/metadata_tables/mapspam_names.csv) |
 | technology       | [link](https://github.com/wri/MAPSPAM/blob/master/metadata_tables/technologies.csv)  |
 
+
+parameter structure **b** (and options)
+
+| parameter        | options                                                                              |
+|------------------|--------------------------------------------------------------------------------------|
+| spam_version     | spam2010v1r0                                                                         |
+| extent           | global                                                                               |
+| variable         | see above                                                                            |
+| technology       | [link](https://github.com/wri/MAPSPAM/blob/master/metadata_tables/structure_b.csv)   |
 
 
 
