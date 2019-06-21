@@ -1,0 +1,43 @@
+﻿crop_number,name,SPAM_name,type
+1,wheat,whea,food
+2,rice,rice,food
+3,maize,maiz,food
+4,barley,barl,food
+5,pearl millet,pmil,food
+6,small millet,smil,food
+7,sorghum,sorg,food
+8,other cereals,ocer,food
+9,potato,pota,food
+10,sweet potato,swpo,food
+11,yams,yams,food
+12,cassava,cass,food
+13,other roots,orts,food
+14,bean,bean,food
+15,chickpea,chic,food
+16,cowpea,cowp,food
+17,pigeonpea,pige,food
+18,lentil,lent,food
+19,other pulses,opul,food
+20,soybean,soyb,food
+21,groundnut,grou,food
+22,coconut,cnut,food
+37,banana,bana,food
+38,plantain,plnt,food
+39,tropical fruit,trof,food
+40,temperate fruit,temf,food
+41,vegetables,vege,food
+23,oilpalm,oilp,non_food
+24,sunflower,sunf,non_food
+25,rapeseed,rape,non_food
+26,sesameseed,sesa,non_food
+27,other oil crops,ooil,non_food
+28,sugarcane,sugc,non_food
+29,sugarbeet,sugb,non_food
+30,cotton,cott,non_food
+31,other fibre crop,s ofib,non_food
+32,arabica coffee,acof,non_food
+33,robusta coffee,rcof,non_food
+34,cocoa,coco,non_food
+35,tea,teas,non_food
+36,tobacco,toba,non_food
+42,rest of crops,rest,non_food
