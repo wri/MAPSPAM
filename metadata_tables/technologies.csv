@@ -1,0 +1,7 @@
+﻿technology,technology_full
+a,"all technologies together, ie complete crop"
+i,irrigated portion of crop
+h,rainfed high inputs portion of crop
+l,rainfed low inputs portion of crop
+s,rainfed subsistence portion of crop
+r,"rainfed portion of crop (= TA - TI, or TH + TL + TS)"

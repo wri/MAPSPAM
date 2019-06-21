@@ -21,11 +21,6 @@
 20,soybean,soyb,food
 21,groundnut,grou,food
 22,coconut,cnut,food
-37,banana,bana,food
-38,plantain,plnt,food
-39,tropical fruit,trof,food
-40,temperate fruit,temf,food
-41,vegetables,vege,food
 23,oilpalm,oilp,non_food
 24,sunflower,sunf,non_food
 25,rapeseed,rape,non_food
@@ -34,10 +29,15 @@
 28,sugarcane,sugc,non_food
 29,sugarbeet,sugb,non_food
 30,cotton,cott,non_food
-31,other fibre crop,s ofib,non_food
+31,other fibre crops,ofib,non_food
 32,arabica coffee,acof,non_food
 33,robusta coffee,rcof,non_food
 34,cocoa,coco,non_food
 35,tea,teas,non_food
 36,tobacco,toba,non_food
+37,banana,bana,food
+38,plantain,plnt,food
+39,tropical fruit,trof,food
+40,temperate fruit,temf,food
+41,vegetables,vege,food
 42,rest of crops,rest,non_food
