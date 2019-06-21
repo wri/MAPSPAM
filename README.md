@@ -18,8 +18,8 @@ parameter structure a (and options)
 :-----:|:-----:
 | extent|global |
 | variable|see above |
-| mapspam\_cropname| [link](https://github.com/wri/MAPSPAM/blob/master/metadata\_tables/mapspam\_names.csv) |
-| technology| [link](https://github.com/wri/MAPSPAM/blob/master/metadata\_tables/technologies.csv) |
+| mapspam\_cropname| https://github.com/wri/MAPSPAM/blob/master/metadata\_tables/mapspam\_names.csv |
+| technology| https://github.com/wri/MAPSPAM/blob/master/metadata\_tables/technologies.csv |
 
 
 
