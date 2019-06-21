@@ -2,6 +2,9 @@
 Process MAPSPAM 2010v1 data and make available in additional formats.  
 
 http://mapspam.info/  
+    
+[original metadata](https://s3.amazonaws.com/mapspam/2010/v1.0/ReadMe_v1r0_Global.txt)  
+
 
 Spatial resolution: 5 arc minute  
 Nodata value: -1  
