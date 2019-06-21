@@ -7,4 +7,4 @@ area_fo,harvested area of food crops
 area_nf,harvested area of non-food crops
 vp_cr_ar,VoP per ha of all crops
 vp_fo_ar,VoP per ha of food crops
-p_nf_ar,VoP per ha of non-food crops
+vp_nf_ar,VoP per ha of non-food crops
