@@ -14,7 +14,7 @@ yield|a
 value-of-production|b
 
 parameter structure a (and options)  
-**spam_version**|**spam2010v1r0**
+**spam version**|**spam2010v1r0**
 :-----:|:-----:
 extent|global
 variable|see above
