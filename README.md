@@ -15,14 +15,13 @@ value-of-production|b
 
 parameter structure a (and options)  
 
-| spam_version     | spam2010v1r0 |
-|------------------|--------------|
-| extent           | global       |
-| variable         | see          |
-| mapspam_cropname | test         |
-|                  |              |
-|                  |              |
-
+| spam_version     | spam2010v1r0                                                                         |
+|------------------|--------------------------------------------------------------------------------------|
+| extent           | global                                                                               |
+| variable         | see                                                                                  |
+| mapspam_cropname | [link](https://github.com/wri/MAPSPAM/blob/master/metadata_tables/mapspam_names.csv) |
+|                  |                                                                                      |
+|                  |                                                                                      |
 
 
 
