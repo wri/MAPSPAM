@@ -13,7 +13,7 @@ production|a
 yield|a
 value-of-production|b
 
-parameter structure a (and options)
+parameter structure a (and options)  
 **spam_version**|**spam2010v1r0**
 :-----:|:-----:
 extent|global
