@@ -3,6 +3,10 @@ Process MAPSPAM 2010v1 data and make available in additional formats.
 
 http://mapspam.info/  
 
+Spatial resolution: 5 arc minute  
+Nodata value: -1  
+Data type: float32  
+
 MapSPAM variables and parameter structure:
 
 **variable**|**parameter\_structure**|**unit**|
