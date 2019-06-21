@@ -44,6 +44,8 @@ parameter structure **b** (and options)
 `path = projects/WRI-Aquaduct/Y2019M06D17_RH_Ingest_MAPSPAM_EE_V01/output_V01/mapspam2010v1r0`  
 
 
+## Notes:
+
 Find unique property values using:
 `var icUniques = ic.distinct(["property"]).aggregate_array("property")`
 
