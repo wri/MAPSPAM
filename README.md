@@ -5,13 +5,13 @@ http://mapspam.info/
 
 MapSPAM variables and parameter structure:
 
-**variable**|**parameter\_structure**
-:-----:|:-----:
-physical-area|a
-harvested-area|a
-production|a
-yield|a
-value-of-production|b
+**variable**|**parameter\_structure**|**Unit**|
+:-----:|:-----:|:-----:|
+physical-area|a|ha
+harvested-area|a|ha
+production|a|mt
+yield|a|kg/ha
+value-of-production|b|I$
 
 parameter structure **a** (and options)  
 
