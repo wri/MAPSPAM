@@ -5,7 +5,7 @@ http://mapspam.info/
 
 MapSPAM variables and parameter structure:
 
-**variable**|**parameter\_structure**|**Unit**|
+**variable**|**parameter\_structure**|**unit**|
 :-----:|:-----:|:-----:|
 physical-area|a|ha
 harvested-area|a|ha
