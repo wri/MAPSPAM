@@ -1,43 +1,43 @@
-crop_number	name	SPAM_name	type	group	crop_color	group_color
-1	wheat	whea	food	Cereals	#4B0082	#C71585
-2	rice	rice	food	Cereals	#800080	#C71585
-3	maize	maiz	food	Cereals	#C71585	#C71585
-4	barley	barl	food	Cereals	#DB7093	#C71585
-5	pearl millet	pmil	food	Cereals	#FF1493	#C71585
-6	small millet	smil	food	Cereals	#FF69B4	#C71585
-7	sorghum	sorg	food	Cereals	#FFB6C1	#C71585
-8	other cereals	ocer	food	Cereals	#FFC0CB	#C71585
-9	potato	pota	food	Roots And Tubers	#800000	#A52A2A
-10	sweet potato	swpo	food	Roots And Tubers	#8B0000	#A52A2A
-11	yams	yams	food	Roots And Tubers	#A52A2A	#A52A2A
-12	cassava	cass	food	Roots And Tubers	#B22222	#A52A2A
-13	other roots	orts	food	Roots And Tubers	#DC143C	#A52A2A
-14	bean	bean	food	Pulses and legumes	#00008B	#0000FF
-15	chickpea	chic	food	Pulses and legumes	#0000CD	#0000FF
-16	cowpea	cowp	food	Pulses and legumes	#0000FF	#0000FF
-17	pigeonpea	pige	food	Pulses and legumes	#1E90FF	#0000FF
-18	lentil	lent	food	Pulses and legumes		#0000FF
-19	other pulses	opul	food	Pulses and legumes	#00BFFF	#0000FF
-20	soybean	soyb	food	Oilseed crops	#006400	#6B8E23
-21	groundnut	grou	food	Oilseed crops	#228B22	#6B8E23
-22	coconut	cnut	food	Oilseed crops	#6B8E23	#6B8E23
-23	oilpalm	oilp	non_food	Oilseed crops	#556B2F	#6B8E23
-24	sunflower	sunf	non_food	Oilseed crops	#808000	#6B8E23
-25	rapeseed	rape	non_food	Oilseed crops	#2E8B57	#6B8E23
-26	sesameseed	sesa	non_food	Oilseed crops	#3CB371	#6B8E23
-27	other oil crops	ooil	non_food	Oilseed crops	#8FBC8F	#6B8E23
-28	sugarcane	sugc	non_food	Sugar crops	#FFDAB9	#FFDAB9
-29	sugarbeet	sugb	non_food	Sugar crops	#FFE4B5	#FFDAB9
-30	cotton	cott	non_food	Fibres	#E6E6FA	#E6E6FA
-31	other fibre crops	ofib	non_food	Fibres	#FFF0F5	#E6E6FA
-32	arabica coffee	acof	non_food	Stimulants	#A0522D	#8B4513
-33	robusta coffee	rcof	non_food	Stimulants	#8B4513	#8B4513
-34	cocoa	coco	non_food	Stimulants	#D2691E	#8B4513
-35	tea	teas	non_food	Stimulants	#CD853F	#8B4513
-36	tobacco	toba	non_food	Stimulants	#DAA520	#8B4513
-37	banana	bana	food	Fruit and nuts	#FFD700	#FFA500
-38	plantain	plnt	food	Fruit and nuts	#FFA500	#FFA500
-39	tropical fruit	trof	food	Fruit and nuts	#FF8C00	#FFA500
-40	temperate fruit	temf	food	Fruit and nuts	#FF6347	#FFA500
-41	vegetables	vege	food	Vegetables	#008000	#008000
-42	rest of crops	rest	non_food	Other crops	#2F4F4F	#2F4F4F
+﻿crop_number,name,SPAM_name,type,crop_group,crop_color,crop_group_color
+1,wheat,whea,food,Cereals,#4B0082,#C71585
+2,rice,rice,food,Cereals,#800080,#C71585
+3,maize,maiz,food,Cereals,#C71585,#C71585
+4,barley,barl,food,Cereals,#DB7093,#C71585
+5,pearl millet,pmil,food,Cereals,#FF1493,#C71585
+6,small millet,smil,food,Cereals,#FF69B4,#C71585
+7,sorghum,sorg,food,Cereals,#FFB6C1,#C71585
+8,other cereals,ocer,food,Cereals,#FFC0CB,#C71585
+9,potato,pota,food,Roots And Tubers,#800000,#A52A2A
+10,sweet potato,swpo,food,Roots And Tubers,#8B0000,#A52A2A
+11,yams,yams,food,Roots And Tubers,#A52A2A,#A52A2A
+12,cassava,cass,food,Roots And Tubers,#B22222,#A52A2A
+13,other roots,orts,food,Roots And Tubers,#DC143C,#A52A2A
+14,bean,bean,food,Pulses and legumes,#00008B,#0000FF
+15,chickpea,chic,food,Pulses and legumes,#0000CD,#0000FF
+16,cowpea,cowp,food,Pulses and legumes,#0000FF,#0000FF
+17,pigeonpea,pige,food,Pulses and legumes,#1E90FF,#0000FF
+18,lentil,lent,food,Pulses and legumes,,#0000FF
+19,other pulses,opul,food,Pulses and legumes,#00BFFF,#0000FF
+20,soybean,soyb,food,Oilseed crops,#006400,#6B8E23
+21,groundnut,grou,food,Oilseed crops,#228B22,#6B8E23
+22,coconut,cnut,food,Oilseed crops,#6B8E23,#6B8E23
+23,oilpalm,oilp,non_food,Oilseed crops,#556B2F,#6B8E23
+24,sunflower,sunf,non_food,Oilseed crops,#808000,#6B8E23
+25,rapeseed,rape,non_food,Oilseed crops,#2E8B57,#6B8E23
+26,sesameseed,sesa,non_food,Oilseed crops,#3CB371,#6B8E23
+27,other oil crops,ooil,non_food,Oilseed crops,#8FBC8F,#6B8E23
+28,sugarcane,sugc,non_food,Sugar crops,#FFDAB9,#FFDAB9
+29,sugarbeet,sugb,non_food,Sugar crops,#FFE4B5,#FFDAB9
+30,cotton,cott,non_food,Fibres,#E6E6FA,#E6E6FA
+31,other fibre crops,ofib,non_food,Fibres,#FFF0F5,#E6E6FA
+32,arabica coffee,acof,non_food,Stimulants,#A0522D,#8B4513
+33,robusta coffee,rcof,non_food,Stimulants,#8B4513,#8B4513
+34,cocoa,coco,non_food,Stimulants,#D2691E,#8B4513
+35,tea,teas,non_food,Stimulants,#CD853F,#8B4513
+36,tobacco,toba,non_food,Stimulants,#DAA520,#8B4513
+37,banana,bana,food,Fruit and nuts,#FFD700,#FFA500
+38,plantain,plnt,food,Fruit and nuts,#FFA500,#FFA500
+39,tropical fruit,trof,food,Fruit and nuts,#FF8C00,#FFA500
+40,temperate fruit,temf,food,Fruit and nuts,#FF6347,#FFA500
+41,vegetables,vege,food,Vegetables,#008000,#008000
+42,rest of crops,rest,non_food,Other crops,#2F4F4F,#2F4F4F
