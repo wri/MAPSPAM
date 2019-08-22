@@ -56,4 +56,4 @@ parameter structure **b** (and options)
 Find unique property values using:
 `var icUniques = ic.distinct(["property"]).aggregate_array("property")`
 
-https://code.earthengine.google.com/8f81592419e3751b7db9156a28a97b8c
+https://code.earthengine.google.com/6a451f98e9f6b9d0e6c031bd70a0704b
