@@ -15,7 +15,7 @@ Docker: rutgerhofste/gisdocker:ubuntu16.04
 TESTING = 0
 
 SCRIPT_NAME = "Y2019M06D17_RH_Ingest_MAPSPAM_EE_V01"
-OUTPUT_VERSION = 1
+OUTPUT_VERSION = 2
 
 NODATA_VALUE = -1
 
@@ -54,7 +54,20 @@ import pandas as pd
 from google.cloud import storage
 
 
+# Create imageCollection manually using UI. 
+# Add link to GitHub using the following command. (replace command as needed)
+
 # In[4]:
+
+#command = "/opt/anaconda3/envs/python35/bin/earthengine asset set -p metadata='https://github.com/wri/MAPSPAM' projects/WRI-Aquaduct/Y2019M06D17_RH_Ingest_MAPSPAM_EE_V01/output_V01/mapspam2010v1r0"
+
+
+# In[5]:
+
+#subprocess.check_output(command,shell=True)
+
+
+# In[6]:
 
 df_structures = pd.read_csv(URL_STRUCTURES)
 df_crops = pd.read_csv(URL_CROPS)
@@ -63,50 +76,50 @@ df_units = pd.read_csv(URL_UNITS)
 df_structure_b = pd.read_csv(URL_STRUCTURE_B)
 
 
-# In[5]:
+# In[7]:
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/.google.json"
 
 
-# In[6]:
+# In[8]:
 
 client = storage.Client()
 
 
-# In[7]:
+# In[9]:
 
 bucket = client.get_bucket(GCS_BUCKET)
 
 
-# In[8]:
+# In[10]:
 
 blobs = bucket.list_blobs(prefix=PREFIX)
 
 
-# In[9]:
+# In[11]:
 
 blobs = list(blobs)
 
 
-# In[10]:
+# In[12]:
 
 if TESTING:
     blobs = blobs[0:3]
 
 
-# In[11]:
+# In[13]:
 
 df_units
 
 
-# In[12]:
+# In[14]:
 
 def get_structure(variable):
     structure = df_structures.loc[df_structures["variable"]==variable]["structure"].iloc[0]
     return structure
 
 
-# In[13]:
+# In[15]:
 
 def get_parameters_structure_a(base):
     """
@@ -130,6 +143,12 @@ def get_parameters_structure_a(base):
     crop_name = df_crops.loc[df_crops["SPAM_name"]==mapspam_cropname]["name"].iloc[0]
     crop_type = df_crops.loc[df_crops["SPAM_name"]==mapspam_cropname]["type"].iloc[0]
     crop_number = df_crops.loc[df_crops["SPAM_name"]==mapspam_cropname]["crop_number"].iloc[0]
+    
+    # added later
+    crop_group = df_crops.loc[df_crops["SPAM_name"]==mapspam_cropname]["crop_group"].iloc[0]
+    crop_color = df_crops.loc[df_crops["SPAM_name"]==mapspam_cropname]["crop_color"].iloc[0]
+    crop_group_color = df_crops.loc[df_crops["SPAM_name"]==mapspam_cropname]["crop_group_color"].iloc[0]
+    
     technology_full = df_techs.loc[df_techs["technology"]==technology]["technology_full"].iloc[0]
     unit = df_units.loc[df_units["variable"]==variable]["unit"].iloc[0]
 
@@ -143,13 +162,16 @@ def get_parameters_structure_a(base):
               "crop_name":crop_name,
               "crop_type":crop_type,
               "crop_number":crop_number,
+              "crop_group":crop_group,
+              "crop_color":crop_color,
+              "crop_group_color":crop_group_color,              
               "unit":unit}
 
     params = {**params , **EXTRA_PARAMS}
     return params
 
 
-# In[14]:
+# In[16]:
 
 def get_parameters_structure_b(base):
     """
@@ -189,12 +211,8 @@ def get_parameters_structure_b(base):
     
     return params
 
-    
-    
-    
 
-
-# In[15]:
+# In[17]:
 
 def dictionary_to_EE_upload_command(d):
     """ Convert a dictionary to command that can be appended to upload command
@@ -224,7 +242,7 @@ def dictionary_to_EE_upload_command(d):
     return command
 
 
-# In[ ]:
+# In[18]:
 
 for blob in blobs:
     filename = blob.name.split("/")[-1]
@@ -258,12 +276,21 @@ for blob in blobs:
         print("skipping file",filename)
 
 
-# In[ ]:
+# In[19]:
 
 end = datetime.datetime.now()
 elapsed = end - start
 print(elapsed)
 
 
-# previous run:
+# previous run:  
+# 0:52:23.953127  
+# 0:53:01.081204
 # 
+# 
+# 
+
+# In[ ]:
+
+
+
