@@ -12,13 +12,13 @@ Data type: float32
 
 MapSPAM variables and parameter structure:
 
-**variable**|**parameter\_structure**|**unit**|
-:-----:|:-----:|:-----:|
-physical-area|a|ha
-harvested-area|a|ha
-production|a|mt
-yield|a|kg/ha
-value-of-production|b|I$
+**variable**|**variable_short**|**parameter\_structure**|**unit**|
+:-----:|:-----:|:-----:|:-----:|
+physical-area|A|a|ha
+harvested-area|H|a|ha
+production|P|a|mt
+yield|Y|a|kg/ha
+value-of-production|V_agg|b|I$
 
 parameter structure **a** (and options)  
 
