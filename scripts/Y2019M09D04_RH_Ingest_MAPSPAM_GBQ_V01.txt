@@ -1,0 +1,84 @@
+
+""" Ingest Mapspam 2010 data into google bigquery.
+-------------------------------------------------------------------------------
+
+Author: Rutger Hofste
+Date: 20190904
+Kernel: python36
+Docker: rutgerhofste/gisdocker:ubuntu16.04
+
+"""
+TESTING = 0
+
+SCRIPT_NAME = "Y2019M09D04_RH_Ingest_MAPSPAM_GBQ_V01"
+OUTPUT_VERSION = 1
+
+NODATA_VALUE = -1
+
+BQ_PROJECT_ID = "aqueduct30"
+GCS_BUCKET = "aqueduct30_v01"
+PREFIX = "Y2019M09D04_RH_Ingest_MAPSPAM_GBQ_V01"
+
+gcs_input_path = "gs://{}/{}".format(GCS_BUCKET,PREFIX)
+
+ec2_input_path = "/volumes/data/{}/input_V{:02.0f}".format(SCRIPT_NAME,OUTPUT_VERSION)
+
+GBQ_OUTPUT_DATASET = "MAPSPAM_2010v10"
+
+
+
+
+import time, datetime, sys
+dateString = time.strftime("Y%YM%mD%d")
+timeString = time.strftime("UTC %H:%M")
+start = datetime.datetime.now()
+print(dateString,timeString)
+sys.version
+
+import os
+import subprocess
+import pandas as pd
+from google.cloud import bigquery
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/.google.json"
+os.environ["GOOGLE_CLOUD_PROJECT"] = "aqueduct30"
+client = bigquery.Client(project=BQ_PROJECT_ID)
+
+!mkdir -p {ec2_input_path}
+
+
+
+!gsutil cp -r {gcs_input_path}/* {ec2_input_path}
+
+variable = "yield"
+
+folder_name = "spam2010v1r0_global_{}.csv".format(variable)
+
+filename = "spam2010V1r0_global_Y_TL.csv"
+
+source = 'gs://{}/{}/{}/{}'.format(GCS_BUCKET,SCRIPT_NAME,folder_name,filename)
+
+input_path = "{}/{}/{}".format(ec2_input_path,folder_name,filename)
+
+input_path
+
+df_raw = pd.read_csv(input_path,encoding="iso-8859-1")
+
+df_raw.head()
+
+df_raw.shape
+
+df = df_raw[0:1000]
+
+dataset_name = "MAPSPAM_2010v10"
+table_name = "yield"
+
+destination_table= "{}.{}".format(dataset_name,table_name)
+
+destination_table
+
+df.to_gbq(project_id=BQ_PROJECT_ID,
+          destination_table=destination_table,
+          if_exists="append")
+
+
